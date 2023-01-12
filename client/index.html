@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Trivia</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .message {
+        background-color: #f2f2f2;
+        padding: 10px;
+        margin-bottom: 10px;
+        }
+        .remove-button {
+        float: right;
+        background-color: #ff0000;
+        color: #ffffff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        }
+        #history {
+        height: 300px;
+        overflow-y: auto;
+        margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Number Trivia</h1>
+    <br>
+    <form id ="form">
+        <label>Enter number:</label>
+        <input type="text" id="input">
+        <button type="submit">Submit</button>
+    </form>
+    <script src="./script.js"></script>
+    <div id="history"></div>
+</body>
+</html>
