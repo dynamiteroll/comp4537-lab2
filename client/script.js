@@ -4,7 +4,7 @@ $(document).ready(function() {
 		const message = $('#input').val();
         $.ajax({
             type: 'POST',
-			url: 'http://localhost:8000/chat',
+			url: 'https://adp4537lab2.onrender.com/chat',
 			data: {
 				message: message
 			},
