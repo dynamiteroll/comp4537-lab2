@@ -4,6 +4,7 @@ const app = express();
 app.use(cors());
 app.use(express.static('client'));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const PORT = 8000;
 app.listen(PORT, () => {
@@ -11,7 +12,7 @@ app.listen(PORT, () => {
 });
 
 app.post('/chat', (req, res) => {
-    console.log(req.body)
+    console.log(req.body);
     const message = req.body.message;
     const number = message.match(/\d+/);
     if (number) {
