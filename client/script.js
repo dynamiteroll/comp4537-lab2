@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         body: JSON.stringify({ message: message }),
         headers: {
           'Content-Type': 'application/json',
-          'Origin' : 'https://adp4537lab2.onrender.com',
+          'Origin' : 'https://adp4537lab2.onrender.com/chat',
           'Access-Control-Allow-Origin' : '*'
 
         }
