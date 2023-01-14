@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('form').addEventListener('submit', function (event) {
       event.preventDefault();
       const message = document.getElementById('input').value;
-      fetch('https://adp4537lab2.onrender.com', {
+      fetch('https://adp4537lab2.onrender.com/chat', {
       //fetch('http://localhost:8000/chat', {
         method: 'POST',
         body: JSON.stringify({ message: message }),
