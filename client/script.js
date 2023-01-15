@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fetch('https://adp4537lab2.onrender.com/chat', {
       //fetch('http://localhost:8000/chat', {
         method: 'POST',
-        body: JSON.stringify({ "message" : message }),
+        body: JSON.stringify({ "message": message }),
         headers: {
           'Content-Type': 'application/json'
         }
