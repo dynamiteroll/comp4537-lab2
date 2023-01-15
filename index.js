@@ -17,17 +17,18 @@ app.post('/chat', (req, res) => {
     const number = message.match(/\d+/);
     if (number) {
         fetch(`http://numbersapi.com/${number}?type=trivia`).then(response => response.text()).then(data => {
-            res.send({
+            console.log(data);
+            res.json({
                 text: data
             });
 
         }).catch(error => {
-            res.send({
+            res.json({
                 text: "No info about number found."
             });
         })
     } else {
-        res.send({
+        res.json({
             text: "Please provide number."
         });
     }
